@@ -1,7 +1,9 @@
 <script setup lang="ts">
-const __ = globalThis.__;
+import { format } from "./formatter";
+
+const world = format("World");
 </script>
 
 <template>
-  <Story>Hello {{ __("World") }}</Story>
+  <Story>Hello {{ world }}</Story>
 </template>
